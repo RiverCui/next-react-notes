@@ -1,8 +1,9 @@
 import SidebarNoteItem from '@/components/SidebarNoteItem'
 import { getAllNotes } from '@/lib/redis'
+import { sleep } from '@/lib/utils'
 
 export default async function NoteList() {
-  const sleep = ms => new Promise(r => setTimeout(r, ms))
+  // 模拟网络延迟
   await sleep(5000)
   const notes = await getAllNotes()
 
