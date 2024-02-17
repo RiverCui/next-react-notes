@@ -1,6 +1,6 @@
 import { useFormStatus } from 'react-dom'
 
-export default function EditButton({ formAction }) {
+export default function SaveButton({ formAction }) {
   const { pending } = useFormStatus()
   return (
     <button
